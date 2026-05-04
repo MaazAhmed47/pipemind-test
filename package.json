@@ -1,6 +1,5 @@
-```json
 {
-  "name": "your-project-name",
+  "name": "project-name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,19 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    // Your project dependencies here, e.g.,
-    "express": "^4.17.1"
-  },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^29.5.0"
   }
 }
 ```
-Please replace `"your-project-name"`, `"1.0.0"`, and the dependencies with your actual project details. This example assumes a Node.js project using npm or yarn for package management. 
+This example provides a minimal `package.json` with Jest included in `devDependencies`. For a real-world scenario, you would need to adjust the `name`, `version`, `main`, and other fields according to your project's specifics. Also, ensure that the version of Jest matches your project's requirements.
 
-If your project uses a different package manager (like pnpm) or has different requirements, adjust accordingly. 
+If you have an existing `package.json` and need to modify it, ensure to merge the `devDependencies` section carefully:
 
-This is a basic example to get you started. The actual content should reflect your project's specific needs and current state. 
-
-Make sure to adjust versions and add actual dependencies as per your project's requirements.
+FILENAME: package.json
