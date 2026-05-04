@@ -2,21 +2,22 @@ name: PipeMind Test Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
+      - name: Set up job
+        run: echo "Setting up job"
+      - name: Run actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '12'
-
+          node-version: '20' # Update node-version to '20'
       - name: Install dependencies
         run: npm install
-
       - name: Run tests
-        run: npm test -- --passWithNoTests
+        run: npm test
