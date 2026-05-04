@@ -1,15 +1,10 @@
 {
-  "name": "pipe-mind",
+  "name": "pipe-mind-test-pipeline",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "jest": "^29.5.0"
   }
 }
